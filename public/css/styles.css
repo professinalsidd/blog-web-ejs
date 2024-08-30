@@ -1,0 +1,116 @@
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.container{
+    margin-bottom: 5em;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position:fixed;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	padding: .5em;
+	background-color: #1abc9c;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 1.5em;
+  color: #fff;
+}
+
+.center{
+    text-align: center;
+    margin: 4em auto 2em auto;
+}
+
+.floating{
+    font-size: 2em;
+    position:  fixed;
+    bottom: 3em;
+    margin-right: 20px;
+    right: 0;
+    border-radius: 50px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+
+
+/* -------------------------------------Messages ------------------------ */
+
+div.user-messages{
+    display: flex;
+    justify-content: baseline;
+
+}
+div.user-messages div{
+    margin: .5em auto;
+}
+
+.user{
+    background-color: teal;
+    padding: 1em 2em;
+    color: #f1f1f1;
+    min-width: 200px;
+    max-width: 30%;
+    border-radius: 10px 0 0 10px;
+}
+
+.user i{
+    font-size: 5em;
+}
+
+.message{
+    background-color: purple;
+    padding: 1em 2em;
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+}
+
+.message-card{
+    color: #f1f1f1;
+    position: relative;
+}
+
+.message-card button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2em;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+::-webkit-scrollbar{
+    width: 3px;
+}  
+
+::-webkit-scrollbar-track{
+    background: initial;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #1abc9c;
+    border-radius: 50px;
+}

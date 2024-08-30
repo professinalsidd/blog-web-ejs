@@ -1,0 +1,33 @@
+<%- include('partials/header') -%>
+
+<h1>Messages</h1>
+
+<% messages.forEach(element => { %>
+
+    <div class="user-messages">
+        <div class="user">
+            <i class="fas fa-sms"></i> <br>
+             <span><%= element.email %> <br> <%= element.phone %>  </span>
+        </div>
+    
+        <div class="message">
+            <div class="message-card">
+                <form action="/delete" method="post">
+                    <input type="text"name = 'id' value=<%= element._id %> hidden>
+                    <button type="submit"><i class="fas fa-trash"></i></button>
+               
+                    
+                </form>
+                <div>
+                    <h1>Message </h1>
+                    <span>From - <%= element.firstName +' '+ element.lastName %>  </span> 
+                </div>
+                <p><%= element.message %> </p>
+            </div>
+        </div>
+    </div>
+
+<% }); %> 
+
+
+<%- include('partials/footer') -%> 

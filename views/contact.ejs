@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="brand"><span>Contact</span> Submit</h1>
+        <div class="wrapper">
+            <div class="company-info">
+                <h3>Welcome</h3>
+                <ul>
+                    <li><%= info %> </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Contact Me</h3>
+                <form action="/contact" method="post">
+                    <p>
+                        <label>First Name</label>
+                        <input type="text" name="fname" id="firstName" required>
+                    </p>
+                    <p>
+                        <label>Last Name</label>
+                        <input type="text" name="lname" id="lastName" required>
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </p>
+                    <p>
+                        <label>Phone</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </p>
+                    <p class="full">
+                        <label>Your Message</label>
+                        <textarea type="text" rows="5" cols="30" name="message" id="message" required></textarea>
+                    </p>
+                    <p class="full">
+                        <button type="submit">Submit</button>
+                    </p>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div style="margin-bottom:500px"></div>
+</body>
+
+</html>

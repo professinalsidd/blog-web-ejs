@@ -1,0 +1,18 @@
+<%- include('partials/header'); -%>
+    <h1>Hi this is Siddharth😉 and you are here to read blogs and write your blog just use your new mind thoughts and write it </h1>
+<p> <%= homeStartingContent %> </p>
+
+
+<% posts.forEach(function(post) { %>
+ <h1> <%=post.title%></h1>
+ <p><%=post.content.substring(0, 100) + "..."%>
+  <a href="/posts/<%=post.title%>">Read More</a>
+</p>
+ 
+<% }); %>
+
+  <a href="/compose" class="btn btn-primary floating" role="button" name="button">+</a>
+  
+<%- include('partials/footer'); -%>
+
+
